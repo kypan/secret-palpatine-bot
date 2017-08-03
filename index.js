@@ -29,7 +29,7 @@ app.get('/', function(req, res) {
 // This route handles POST requests to our root ngrok address and responds with the same "Ngrok is working message" we used before
 app.post('/', function(req, res) {
     //res.send('post Ngrok is working! Path Hit: ' + req.url);
-    res.send('res:' + req.data);
+    res.send('res:' + JSON.stringify(res));
 });
 
 
